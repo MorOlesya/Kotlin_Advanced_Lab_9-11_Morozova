@@ -15,23 +15,41 @@ fun main() {
 //    val hero = User()
 //    hero.name = "Oliver"
 //    hero.name = "Mike"
+//
+//
+//    println("Создаём профиль пользователя...")
+//    val user = UserProfile("Kris", "kris@example.com")
+//
+//    println("\nИмя: ${user.name}")
+//    println("Имя: ${user.email}")
+//
+//    println("\nОбращаемся к аватару впервые:")
+//    println("Файл аватара: ${user.avatar}")
+//
+//    println("\nОбращаемся к аватару снова (должен быть взят из кэша)")
+//    println("Файл аватар: ${user.avatar}")
+//
+//    println("\nМеняем email:")
+//    user.email = "kris_new@example.com"
+//
+//    println("\nМеняем имя:")
+//    user.name = "Kris K."
 
 
-    println("Создаём провиль пользователя...")
-    val user = UserProfile("Kris", "kris@example.com")
+    println("Создаём героя...")
+    val hero = GameHero("Воин Света")
 
-    println("\nИмя: ${user.name}")
-    println("Имя: ${user.email}")
+    println("\nТекущая мана: ${hero.mana}")
 
-    println("\nОбращаемся к аватару впервые:")
-    println("Файл аватара: ${user.avatar}")
+    println("\nГерой пытается использовать способность:")
+    println("Способность: ${hero.ultimate}")
 
-    println("\nОбращаемся к аватару снова (должен быть взят из кэша)")
-    println("Файл аватар: ${user.avatar}")
+    println("\nПовторный вызов способности (должна быть мгновенной):")
+    println("Способность: ${hero.ultimate}")
 
-    println("\nМеняем email:")
-    user.email = "kris_new@example.com"
+    println("\nМеняем имя героя:")
+    hero.name = "Тёмный Паладин"
 
-    println("\nМеняем имя:")
-    user.name = "Kris K."
+    println("\nГерой восстанавливает ману:")
+    hero.mana = 200
 }
